@@ -1,4 +1,4 @@
-# guarnic-test-front-end
+# Guarnic Front End Test
 
 ## Project setup
 ```
