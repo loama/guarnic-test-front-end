@@ -53,10 +53,11 @@ html, body
   padding: 0
 
 #app
-  --almost-white: #F0F0F0
+  --almost-white: #F8F9FA
   --black: #000
-  --border: #424242
+  --border: #E2E3E3
   --white: #FFF
+  font-size: 12px
   padding-top: 40px
 
   .navbar

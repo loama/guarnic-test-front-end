@@ -84,8 +84,8 @@ export default {
       padding: 0 8px
 
       &:first-child
-        border-top: 1px solid var(--border)
-        height: 42px
+        border-top: none
+        height: 43px
 
       &:last-child
         border-bottom: 1px solid var(--border)
