@@ -41,7 +41,7 @@ export default {
 
     .row
       &.title
-        background: var(--border)
+        background: var(--black)
         color: var(--white)
         line-height: 44px
         text-align: center

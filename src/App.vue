@@ -6,8 +6,14 @@
 
       <div class="view-choose">
         <div class="indicator" v-bind:class="[view]"></div>
-        <div class="option" v-on:click="view = 'days'">Day</div>
-        <div class="option" v-on:click="view = 'full'">Full</div>
+
+        <div class="option"
+             v-bind:class="{active: view === 'days'}"
+             v-on:click="view = 'days'">Day</div>
+
+        <div class="option"
+             v-bind:class="{active: view === 'full'}"
+             v-on:click="view = 'full'">Full</div>
       </div>
     </div>
 
@@ -97,6 +103,7 @@ html, body
         transform: translate3d(80px, 0, 0)
 
     .option
+      color: var(--border)
       cursor: pointer
       display: inline-block
       height: 44px
@@ -104,6 +111,10 @@ html, body
       margin-top: -8px
       position: relative
       text-align: center
+      transition: all 0.3s
       width: 80px
       z-index: 1
+
+      &.active
+        color: var(--black)
 </style>
